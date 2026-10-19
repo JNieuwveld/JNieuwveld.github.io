@@ -15,7 +15,7 @@ email: ""
 cv: ""            # e.g. files/CV_Joris_Nieuwveld.pdf  (leave empty to hide)
 dblp: https://dblp.org/search?q=Joris+Nieuwveld
 scholar: ""       # Google Scholar profile URL (leave empty to hide)
-orcid: ""         # ORCID URL (leave empty to hide)
+orcid: https://orcid.org/0009-0002-0339-1230         # ORCID URL (leave empty to hide)
 github: ""
 
 description: >-
