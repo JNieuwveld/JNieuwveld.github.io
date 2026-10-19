@@ -27,6 +27,7 @@ papers:
     venue: LICS, LIPIcs 380
     year: 2026
     pdf: files/variable-bounded-presburger26.pdf
+    doi: https://doi.org/10.4230/LIPIcs.LICS.2026.7
 
   - title: Rich Sequences and Decidability of Arithmetic Theories
     authors: T. Karimov, J. Nieuwveld, J. Ouaknine
