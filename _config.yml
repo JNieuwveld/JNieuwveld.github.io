@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────────────────────
+#  Site settings — edit these to update your header and bio.
+#  Publications live in _data/publications.yml
+# ─────────────────────────────────────────────────────────────
+
+title: Joris Nieuwveld
+name: Joris Nieuwveld
+position: Glasstone Research Fellow in Computer Science
+affiliation: University of Oxford
+affiliation_url: https://www.cs.ox.ac.uk/
+
+# Shown as name [at] domain to deter scrapers. Leave empty to hide.
+email: ""
+
+cv: ""            # e.g. files/CV_Joris_Nieuwveld.pdf  (leave empty to hide)
+dblp: https://dblp.org/search?q=Joris+Nieuwveld
+scholar: ""       # Google Scholar profile URL (leave empty to hide)
+orcid: ""         # ORCID URL (leave empty to hide)
+github: ""
+
+description: >-
+  Joris Nieuwveld — linear recurrence sequences, dynamical systems,
+  logic and arithmetic.
+
+# Build settings (no need to change)
+markdown: kramdown
+exclude: [download-pdfs.sh, download-pdfs.bat, README.md, Gemfile, Gemfile.lock, vendor]

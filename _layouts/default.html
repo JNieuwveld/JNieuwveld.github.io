@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description | strip }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$', right: '$', display: false}]});"></script>
+</head>
+<body>
+<main class="page">
+
+  <header class="intro">
+    <div>
+      <h1>{{ site.name }}</h1>
+      <p class="role">{{ site.position }}<br>
+        <a href="{{ site.affiliation_url }}">{{ site.affiliation }}</a></p>
+    </div>
+    <nav class="links" aria-label="Profiles">
+      {% if site.email != "" %}{% assign e = site.email | split: "@" %}
+      <span class="email">{{ e[0] }}<span class="at"> [at] </span>{{ e[1] }}</span>{% endif %}
+      {% if site.cv != "" %}<a href="{{ site.cv }}">CV</a>{% endif %}
+      {% if site.scholar != "" %}<a href="{{ site.scholar }}">Scholar</a>{% endif %}
+      {% if site.dblp != "" %}<a href="{{ site.dblp }}">dblp</a>{% endif %}
+      {% if site.orcid != "" %}<a href="{{ site.orcid }}">ORCID</a>{% endif %}
+      {% if site.github != "" %}<a href="{{ site.github }}">GitHub</a>{% endif %}
+    </nav>
+  </header>
+
+  <section class="about">
+    {{ content }}
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    {% assign groups = site.data.publications.papers | group_by: "year" %}
+    {% for g in groups %}
+    <div class="year-group">
+      <h3 class="year">{{ g.name }}</h3>
+      <ol class="pubs">
+        {% for p in g.items %}
+        <li>
+          <span class="title">{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</span>
+          {% if p.note %}<span class="badge">{{ p.note }}</span>{% endif %}
+          <span class="authors">{{ p.authors | replace: "J. Nieuwveld", "<strong>J. Nieuwveld</strong>" }}</span>
+          <span class="meta">
+            <em>{{ p.venue }}</em>
+            {% if p.pdf %}<a href="{{ p.pdf }}">pdf</a>{% endif %}
+            {% if p.doi %}<a href="{{ p.doi }}">doi</a>{% endif %}
+            {% if p.arxiv %}<a href="{{ p.arxiv }}">arXiv</a>{% endif %}
+            {% if p.extra_url %}<a href="{{ p.extra_url }}">{{ p.extra_label | default: "link" }}</a>{% endif %}
+          </span>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2>Theses</h2>
+    <ol class="pubs">
+      {% for t in site.data.publications.theses %}
+      <li>
+        <span class="title">{{ t.title }}</span>
+        <span class="meta"><em>{{ t.kind }}</em> · {{ t.details }}
+          {% if t.pdf %}<a href="{{ t.pdf }}">pdf</a>{% endif %}</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <footer>Last updated {{ site.time | date: "%B %Y" }}</footer>
+</main>
+</body>
+</html>

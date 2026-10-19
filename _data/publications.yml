@@ -1,0 +1,140 @@
+# ─────────────────────────────────────────────────────────────
+#  Publications — newest first. To add a paper, copy a block.
+#
+#  Fields:
+#    title, authors, venue, year   (required)
+#    pdf, doi, arxiv, extra_url    (optional links; omit to hide)
+#    extra_label                   (text for extra_url)
+#    note                          (e.g. an award; shown as a badge)
+#
+#  Math: write LaTeX between dollar signs, e.g. "On the $p$-adic ..."
+#        (use quotes around the title when it contains $ or :)
+#
+#  Tip: put your own PDFs in the files/ folder and link them as
+#       pdf: files/your-paper.pdf
+# ─────────────────────────────────────────────────────────────
+
+papers:
+  - title: On Existential Büchi Arithmetic in Two Coprime Bases
+    authors: J. Nieuwveld
+    venue: Preprint
+    year: 2026
+    pdf: files/buchi-coprime-bases26.pdf
+    arxiv: https://arxiv.org/abs/2608.24410
+
+  - title: On Variable-Bounded Non-Linear Expansions of Presburger Arithmetic
+    authors: P. Bacik, J. Nieuwveld, J. Ouaknine, M. Vahanwala, M. Venkatesh, E. R. Wieser
+    venue: LICS, LIPIcs 380
+    year: 2026
+    pdf: files/variable-bounded-presburger26.pdf
+
+  - title: Rich Sequences and Decidability of Logical Theories
+    authors: T. Karimov, J. Nieuwveld, J. Ouaknine
+    venue: Submitted
+    year: 2026
+    pdf: files/rich-sequences26.pdf
+
+  - title: A Survey of the Skolem and Positivity Problems for Linear Recurrence Sequences
+    authors: P. Bacik, T. Karimov, F. Luca, J. Nieuwveld, J. Ouaknine, D. Purser, J. Worrell
+    venue: Submitted
+    year: 2026
+    pdf: files/skolem_and_positivity_survey26.pdf
+
+  - title: Algorithmic Applications of Schanuel's Conjecture
+    authors: T. Karimov, J. Nieuwveld, J. Ouaknine, M. Vahanwala, J. Worrell
+    venue: Principles of Formal Quantitative Analysis
+    year: 2025
+    pdf: files/algorithmic-schanuel25.pdf
+    doi: https://doi.org/10.1007/978-3-031-97439-7_5
+
+  - title: Twisted Rational Zeros of Linear Recurrence Sequences
+    authors: Y. Bilu, F. Luca, J. Nieuwveld, J. Ouaknine, J. Worrell
+    venue: Journal of the London Mathematical Society 111(3)
+    year: 2025
+    pdf: files/twisted-zeros24.pdf
+    doi: https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/jlms.70126
+    arxiv: https://arxiv.org/abs/2401.06537
+
+  - title: On Expansions of Monadic Second-Order Logic with Dynamical Predicates
+    authors: J. Nieuwveld, J. Ouaknine
+    venue: MFCS
+    year: 2025
+    pdf: files/MSO-two-roots-expansions25.pdf
+    doi: https://doi.org/10.4230/LIPIcs.MFCS.2025.80
+
+  - title: On the Decidability of Presburger Arithmetic Expanded with Powers
+    authors: T. Karimov, F. Luca, J. Nieuwveld, J. Ouaknine, J. Worrell
+    venue: SODA
+    year: 2025
+    pdf: files/OnTheDecidabilityOfPresburgerArithmeticExtendedWithPowers.pdf
+    doi: https://epubs.siam.org/doi/abs/10.1137/1.9781611978322.89
+
+  - title: The Monadic Theory of Toric Words
+    authors: V. Berthé, T. Karimov, J. Nieuwveld, J. Ouaknine, M. Vahanwala, J. Worrell
+    venue: Theoretical Computer Science 1025
+    year: 2025
+    pdf: files/monadic-toric23.pdf
+    doi: https://www.sciencedirect.com/science/article/pii/S0304397524005760
+
+  - title: On the Decidability of Monadic Second-Order Logic with Arithmetic Predicates
+    authors: V. Berthé, T. Karimov, J. Nieuwveld, J. Ouaknine, M. Vahanwala, J. Worrell
+    venue: LICS
+    year: 2024
+    note: Distinguished Paper Award
+    pdf: files/MSO-expansions24.pdf
+    doi: https://dl.acm.org/doi/abs/10.1145/3661814.3662119
+
+  - title: Model Checking Markov Chains as Distribution Transformers
+    authors: R. Aghamov, C. Baier, T. Karimov, J. Nieuwveld, J. Ouaknine, J. Piribauer, M. Vahanwala
+    venue: "Principles of Verification: Cycling the Probabilistic Landscape, LNCS 15261"
+    year: 2024
+    pdf: files/model-checking-markov-chains24.pdf
+    doi: https://link.springer.com/chapter/10.1007/978-3-031-75775-4_13
+
+  - title: "On the $p$-adic Zeros of the Tribonacci Sequence"
+    authors: Y. Bilu, F. Luca, J. Nieuwveld, J. Ouaknine, J. Worrell
+    venue: Mathematics of Computation 93(347)
+    year: 2023
+    pdf: files/OnThepAdicZerosOfTheTribonacciSequence.pdf
+    doi: https://www.ams.org/journals/mcom/2024-93-347/S0025-5718-2023-03893-5/
+
+  - title: Positivity Problems for Reversible Linear Recurrence Sequences
+    authors: G. Kenison, J. Nieuwveld, J. Ouaknine, J. Worrell
+    venue: ICALP
+    year: 2023
+    pdf: files/positivity-reversible-lrs23.pdf
+    doi: https://drops.dagstuhl.de/opus/volltexte/2023/18182/
+
+  - title: The Power of Positivity
+    authors: T. Karimov, E. Kelmendi, J. Nieuwveld, J. Ouaknine, J. Worrell
+    venue: LICS
+    year: 2023
+    pdf: files/ThePowerOfPositivity.pdf
+    doi: https://ieeexplore.ieee.org/document/10175758
+
+  - title: Skolem Meets Schanuel
+    authors: Y. Bilu, F. Luca, J. Nieuwveld, J. Ouaknine, D. Purser, J. Worrell
+    venue: MFCS
+    year: 2022
+    pdf: files/SkolemMeetsSchanuel.pdf
+    doi: https://drops.dagstuhl.de/opus/volltexte/2022/16818/
+    extra_url: https://skolem.mpi-sws.org
+    extra_label: webtool
+
+  - title: On the Skolem Problem and the Skolem Conjecture
+    authors: R. Lipton, F. Luca, J. Nieuwveld, J. Ouaknine, D. Purser, J. Worrell
+    venue: LICS
+    year: 2022
+    pdf: files/OnTheSkolemProblemAndTheSkolemConjecture.pdf
+    doi: https://dl.acm.org/doi/10.1145/3531130.3533328
+
+theses:
+  - title: Algorithmic Problems for Linear Recurrence Sequences
+    kind: PhD thesis
+    details: Saarland University, 2025. Supervised by Joël Ouaknine at MPI-SWS.
+    pdf: files/thesis.pdf
+
+  - title: "Fractions, Functions and Folding: A Novel Link between Continued Fractions, Mahler Functions and Paper Folding"
+    kind: MSc thesis
+    details: Radboud University Nijmegen. Supervised by Wadim Zudilin.
+    pdf: files/JorisNieuwveldMSc.pdf
