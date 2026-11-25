@@ -15,6 +15,13 @@
 # ─────────────────────────────────────────────────────────────
 
 papers:
+  - title: On Presburger Arithmetic Expanded with Prime Numbers
+    authors: J. Nieuwveld
+    venue: Preprint
+    year: 2026
+    pdf: files/Presburger_and_Primes.pdf
+    arxiv: https://arxiv.org/abs/2611.32977
+
   - title: On Existential Büchi Arithmetic in Two Coprime Bases
     authors: J. Nieuwveld
     venue: Preprint
